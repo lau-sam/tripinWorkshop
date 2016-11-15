@@ -2,12 +2,15 @@
 # tripinWorkshop
 
 **Workshop Week - Ingénieur 5 Informatique** 
-![alt text](https://github.com/lau-sam/tripinWorkshop/blob/master/src/assets/logo/logo.png "Tripin Logo")
+<img src="https://github.com/lau-sam/tripinWorkshop/blob/master/src/assets/logo/logo.png" height="50">
 
 **Front-end** : Ionic 2 
-![alt text](https://github.com/lau-sam/tripinWorkshop/blob/master/src/assets/logo/ionic.png "Ionic Logo")
+<img src="https://github.com/lau-sam/tripinWorkshop/blob/master/src/assets/logo/ionic.png" height="50">
+
 **Back-end** : OpenEJB Apache TomEE 
-![alt text](https://github.com/lau-sam/tripinWorkshop/blob/master/src/assets/logo/tomee.png "TomEE Logo")
+<img src="https://github.com/lau-sam/tripinWorkshop/blob/master/src/assets/logo/tomee.png" height="50">
+<br> --- <br>
+
 
 [//]: # (ionic tuto)
 
