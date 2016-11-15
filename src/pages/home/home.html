@@ -5,14 +5,13 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Semaine Workshop projet innovant Epsi</h2>
-  <p>
-    Nguyen, Azoulay, Porlier, Soyer, Causse.
-  </p>
-  <p>
-    L'appli est basée sur les onglets (tabs) et utilise Tabbed UI
-  </p>
-  <p>
-    Les sources sont dans le dossier <code>src/pages/</code> c'est à cette endroit que la création d'autre onglet(page) s'effectue.
-  </p>
+  <div class="list list-inset">
+    <label class="item item-input">
+      <input type="text" placeholder="Nom d'utilisateur" ng-model="user.username">
+    </label>
+    <label class="item item-input">
+      <input type="password" placeholder="Mot de passe" ng-model="user.password">
+    </label>
+  </div>
+  <button class="button button-block button-calm" ng-click="login()">Connexion</button>
 </ion-content>
