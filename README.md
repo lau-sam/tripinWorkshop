@@ -9,8 +9,9 @@
 
 **Back-end** : OpenEJB Apache TomEE 
 <img src="https://github.com/lau-sam/tripinWorkshop/blob/master/src/assets/logo/tomee.png" height="50">
-<br> --- <br>
-
+<br>
+---
+<br>
 
 [//]: # (ionic tuto)
 
