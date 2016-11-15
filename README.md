@@ -9,7 +9,7 @@ Front-end : **Ionic 2**
 
 Back-end : **OpenEJB Apache TomEE**
 <img src="https://github.com/lau-sam/tripinWorkshop/blob/master/src/assets/logo/tomee.png" height="50">
-<br>
+<br><br>
 
 [//]: # (ionic tuto)
 
@@ -19,7 +19,7 @@ Back-end : **OpenEJB Apache TomEE**
 
 #### Installer Ionic CLI & Cordova
 `$ npm install -g ionic cordova`
-<br>
+<br><br>
 
 # RUN Ionic
 Se placer dans le dossier racine de l'app `tripinWorkshop/` et lancer la commande : <br>
