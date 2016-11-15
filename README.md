@@ -27,9 +27,10 @@ Se placer dans le dossier racine de l'app **tripinWorkshop/** et lancer la comma
 
 
 #### MEMENTO
-```diff
-- Don't forget to install Cordova Whitelist Plugin once in Production. Before moving the application to production, we should formulate a whitelist and allow access to specific network domains and subdomains.
-```
+<span style="color:red ; font-weight: bold;">
+Don't forget to install Cordova Whitelist Plugin once in Production. Before moving the application to production, we should formulate a whitelist and allow access to specific network domains and subdomains.
+</span>
+
 `$ cordova plugin add cordova-plugin-whitelist`
 <br>
 Open **www** folder and add this security meta tag to **index.html** file:
