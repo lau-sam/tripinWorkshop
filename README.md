@@ -33,7 +33,6 @@ Don't forget to install Cordova Whitelist Plugin once in Production. Before movi
 
 `$ cordova plugin add cordova-plugin-whitelist`
 
-<br>
 Open **www** folder and add this security meta tag to **index.html** file :
 ```html
 <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval' 'unsafe-inline' *; object-src 'self'; style-src 'self' 'unsafe-inline'; media-src *">
