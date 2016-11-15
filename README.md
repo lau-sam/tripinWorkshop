@@ -1,17 +1,14 @@
 [//]: # (project description)
 # tripinWorkshop
 
-**Workshop Week - Ingénieur 5 Informatique** 
+Workshop Week - Ingénieur 5 Informatique 
 <img src="https://github.com/lau-sam/tripinWorkshop/blob/master/src/assets/logo/logo.png" height="50">
 
-**Front-end** : Ionic 2 
+Front-end : **Ionic 2** 
 <img src="https://github.com/lau-sam/tripinWorkshop/blob/master/src/assets/logo/ionic.png" height="50">
 
-**Back-end** : OpenEJB Apache TomEE 
+Back-end : **OpenEJB Apache TomEE**
 <img src="https://github.com/lau-sam/tripinWorkshop/blob/master/src/assets/logo/tomee.png" height="50">
-<br>
----
-<br>
 
 [//]: # (ionic tuto)
 
