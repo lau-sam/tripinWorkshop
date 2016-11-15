@@ -18,13 +18,14 @@ Back-end : **OpenEJB Apache TomEE**
 *Prerequisites : nodejs + npm packages installed*
 
 #### Install Ionic CLI & Cordova
+
 `$ npm install -g ionic cordova`
 
 <br>
 # RUN Ionic
 Se placer dans le dossier racine de l'app **tripinWorkshop/** et lancer la commande :
-`$ ionic serve`	
 
+`$ ionic serve`	
 
 #### MEMENTO
 
@@ -36,4 +37,3 @@ Don't forget to install Cordova Whitelist Plugin once in Production. Before movi
 Open **www** folder and add this security meta tag to **index.html** file :
 ```html
 <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval' 'unsafe-inline' *; object-src 'self'; style-src 'self' 'unsafe-inline'; media-src *">
-
