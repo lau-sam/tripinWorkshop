@@ -1,22 +1,22 @@
-<ion-content padding>
-  <ion-list>
-    <ion-item>Pokémon Yellow</ion-item>
-    <ion-item>Super Metroid</ion-item>
-    <ion-item>Mega Man X</ion-item>
-    <ion-item>The Legend of Zelda</ion-item>
-    <ion-item>Pac-Man</ion-item>
-    <ion-item>Super Mario World</ion-item>
-    <ion-item>Street Fighter II</ion-item>
-    <ion-item>Half Life</ion-item>
-    <ion-item>Final Fantasy VII</ion-item>
-    <ion-item>Star Fox</ion-item>
-    <ion-item>Tetris</ion-item>
-    <ion-item>Donkey Kong III</ion-item>
-    <ion-item>GoldenEye 007</ion-item>
-    <ion-item>Doom</ion-item>
-    <ion-item>Fallout</ion-item>
-    <ion-item>GTA</ion-item>
-    <ion-item>Halo</ion-item>
-  </ion-list>
-</ion-content>
+<ion-header>
+  <ion-navbar>
+    <ion-title>GET Json</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding> 
+	<ion-list>
+	   	<ion-item *ngFor="let country of m_json">
+			<ion-card>
+			  <ion-card-header>
+			    {{country.name}}
+			  </ion-card-header>
 
+			  <ion-card-content>
+			    Capital : {{country.capital}}<br>
+			    Population : {{country.population}}<br>
+			  </ion-card-content>
+
+			</ion-card>
+	   	</ion-item>
+	</ion-list>
+</ion-content>
