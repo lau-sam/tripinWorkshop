@@ -6,6 +6,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { FindPage } from '../pages/find/find';
+import { TripDetailsPage } from '../pages/trip-details/trip-details';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FindPage } from '../pages/find/find';
     ContactPage,
     HomePage,
     TabsPage,
-    FindPage
+    FindPage,
+    TripDetailsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -26,7 +28,8 @@ import { FindPage } from '../pages/find/find';
     ContactPage,
     HomePage,
     TabsPage,
-    FindPage
+    FindPage,
+    TripDetailsPage
   ],
   providers: []
 })
