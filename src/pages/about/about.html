@@ -9,17 +9,17 @@
 
 	  <ion-item>
 	    <ion-label floating>Un petit "nom" pour ton trip l'ami ? :)</ion-label>
-	    <ion-input type="text"></ion-input>
+	    <ion-input type="text" [(ngModel)]="tripName"></ion-input>
 	  </ion-item>
 
 	  <ion-item>
 	    <ion-label floating>Envois une description de malade !</ion-label>
-	    <ion-input type="text"></ion-input>
+	    <ion-input type="text" [(ngModel)]="tripDescription"></ion-input>
 	  </ion-item>
 
 				<ion-item>
 				  <ion-label>Nombre de "futurs" potes</ion-label>
-				  <ion-select [(ngModel)]="nbTravellers">
+				  <ion-select [(ngModel)]="tripNbVoyageurs">
 				    <ion-option value="1" selected="true">1</ion-option>
 				    <ion-option value="2">2</ion-option>
 				    <ion-option value="3">3</ion-option>
@@ -33,30 +33,38 @@
 				</ion-item>
 	  <ion-item>
 	    <ion-label floating>Le point de rendez vous</ion-label>
-	    <ion-input type="text"></ion-input>
+	    <ion-input type="text" [(ngModel)]="tripRdvPoint"></ion-input>
 	  </ion-item>
 
 	  <ion-item>
 	    <ion-label floating>La destination prévue </ion-label>
-	    <ion-input type="text"></ion-input>
+	    <ion-input type="text" [(ngModel)]="tripDestination"></ion-input>
 	  </ion-item>
 
 	  <ion-item>
        	<ion-label>Le top départ c'est pour quand ?</ion-label>
-       	<ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="departureDate"></ion-datetime>
+       	<ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="tripDepartureDate"></ion-datetime>
        </ion-item>
 
        <ion-item>
        	<ion-label>Date estimée pour l'arrivé</ion-label>
-       	<ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="arrivalDate"></ion-datetime>
+       	<ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="tripArrivalDate"></ion-datetime>
        </ion-item>
 
 	  <ion-item>
 	    <ion-label floating>Le prix estimé pour le trip</ion-label>
-	    <ion-input type="text"></ion-input>
+	    <ion-input type="text" [(ngModel)]="tripPrice"></ion-input>
 	  </ion-item>
 
-		<button ion-button icon-only (click)="createTrip()" full>
+		<button ion-button icon-only (click)="createTrip( tripName, 
+			tripDescription,
+			tripNbVoyageurs,
+			tripRdvPoint,
+			tripDestination,
+			tripDepartureDate,
+			tripArrivalDate,
+			tripPrice
+		)" full>
 	  		<ion-icon name="md-add"> CREATE TRIP</ion-icon>
 		</button>
 					
