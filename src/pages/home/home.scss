@@ -11,7 +11,10 @@ page-home {
 }
 
 .login{
-    background: url("../assets/images/bkg.png") no-repeat;
+    background: url("../assets/images/bkg.png") fixed center;
+        margin: 0 auto;
+    width: 100%;
+    background-size: 100% 100%;
 }
 
 @font-face {
