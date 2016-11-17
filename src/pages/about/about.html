@@ -3,8 +3,62 @@
     <ion-title>Create New Trip</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding> 
-	<button ion-button icon-only (click)="createTrip()" full>
-  		<ion-icon name="md-add"> CREATE TRIP</ion-icon>
-	</button>
+<ion-content padding>
+	
+	<ion-list>
+
+	  <ion-item>
+	    <ion-label floating>Un petit "nom" pour ton trip l'ami ? :)</ion-label>
+	    <ion-input type="text"></ion-input>
+	  </ion-item>
+
+	  <ion-item>
+	    <ion-label floating>Envois une description de malade !</ion-label>
+	    <ion-input type="text"></ion-input>
+	  </ion-item>
+
+				<ion-item>
+				  <ion-label>Nombre de "futurs" potes</ion-label>
+				  <ion-select [(ngModel)]="nbTravellers">
+				    <ion-option value="1" selected="true">1</ion-option>
+				    <ion-option value="2">2</ion-option>
+				    <ion-option value="3">3</ion-option>
+				    <ion-option value="4">4</ion-option>
+				    <ion-option value="5">5</ion-option>
+				    <ion-option value="6">6</ion-option>
+				    <ion-option value="7">7</ion-option>
+				    <ion-option value="8">8</ion-option>
+				    <ion-option value="9">9</ion-option>
+				  </ion-select>
+				</ion-item>
+	  <ion-item>
+	    <ion-label floating>Le point de rendez vous</ion-label>
+	    <ion-input type="text"></ion-input>
+	  </ion-item>
+
+	  <ion-item>
+	    <ion-label floating>La destination prévue </ion-label>
+	    <ion-input type="text"></ion-input>
+	  </ion-item>
+
+	  <ion-item>
+       	<ion-label>Le top départ c'est pour quand ?</ion-label>
+       	<ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="departureDate"></ion-datetime>
+       </ion-item>
+
+       <ion-item>
+       	<ion-label>Date estimée pour l'arrivé</ion-label>
+       	<ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="arrivalDate"></ion-datetime>
+       </ion-item>
+
+	  <ion-item>
+	    <ion-label floating>Le prix estimé pour le trip</ion-label>
+	    <ion-input type="text"></ion-input>
+	  </ion-item>
+
+		<button ion-button icon-only (click)="createTrip()" full>
+	  		<ion-icon name="md-add"> CREATE TRIP</ion-icon>
+		</button>
+					
+	</ion-list>	
 </ion-content>
