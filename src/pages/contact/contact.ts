@@ -1,69 +1,55 @@
 import { Component } from '@angular/core';
+import { Http } from '@angular/http';
 
 import { NavController } from 'ionic-angular';
+
+import { TripDetailsPage } from '../trip-details/trip-details';
 
 @Component({
   selector: 'page-contact',
   templateUrl: 'contact.html'
 })
 export class ContactPage {
-	items;
-  constructor(public navCtrl: NavController) {
-		this.initializeItems();
+  items;
+  http;
+  itemsFromWS: any;
+
+  constructor(public navController: NavController, private httpParam: Http) {
+    this.http = httpParam;
+    this.initializeItems();
   }
-initializeItems() {
-this.items = [
-      'Amsterdam',
-      'Bogota',
-      'Buenos Aires',
-      'Cairo',
-      'Dhaka',
-      'Edinburgh',
-      'Geneva',
-      'Genoa',
-      'Glasglow',
-      'Hanoi',
-      'Hong Kong',
-      'Islamabad',
-      'Istanbul',
-      'Jakarta',
-      'Kiel',
-      'Kyoto',
-      'Le Havre',
-      'Lebanon',
-      'Lhasa',
-      'Lima',
-      'London',
-      'Los Angeles',
-      'Madrid',
-      'Manila',
-      'New York',
-      'Olympia',
-      'Oslo',
-      'Panama City',
-      'Peking',
-      'Philadelphia',
-      'San Francisco',
-      'Seoul',
-      'Taipeh',
-      'Tel Aviv',
-      'Tokio',
-      'Uelzen',
-      'Washington'
-    ];
+
+  initializeItems() {
+    this.http.get("http://87.98.212.102:8080/WorkshopI5/ws/trip").map(res => res.json()).subscribe(data => {
+      this.itemsFromWS = data;
+      this.items = data;
+    });
+  }
+
+  doRefresh(refresher) {
+    this.initializeItems();
+    refresher.complete();
+  }
+
+  goTripDetails(trip) {
+
+    this.navController.push(TripDetailsPage, {
+      tripObjectSend: trip
+    });
+
   }
 
   getItems(ev) {
-    // Reset items back to all of the items
-    this.initializeItems();
 
+    // reset the set
+    this.items = this.itemsFromWS;
     // set val to the value of the ev target
     var val = ev.target.value;
 
     // if the value is an empty string don't filter the items
     if (val && val.trim() != '') {
       this.items = this.items.filter((item) => {
-        return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
+        return (item['address-to'].toLowerCase().indexOf(val.toLowerCase()) > -1);
       })
     }
   }

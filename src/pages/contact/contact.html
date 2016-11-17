@@ -7,10 +7,16 @@
 </ion-header>
 
 <ion-content>
-  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-searchbar placeholder="Rechercher une destination" (ionInput)="getItems($event)"></ion-searchbar>
+
   <ion-list>
-    <ion-item *ngFor="let item of items">
-      {{ item }}
+    <ion-item *ngFor="let item of items" (click)="goTripDetails(item)">
+      {{ item.name }} <span style="color: #c8c7cc">(Place restante {{ item['number-participers'] - item['number-insiders'] }})</span>
     </ion-item>
   </ion-list>
+
 </ion-content>
