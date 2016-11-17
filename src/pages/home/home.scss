@@ -6,10 +6,17 @@ page-home {
     background: url("../assets/images/logo.png") no-repeat;
     width:150px;
     height: 56px;
-    margin: 0 auto;
+    margin:0 auto;
     text-indent: -9999px;
 }
 
+.title{
+    background: url("../assets/images/logo-white.png") no-repeat;
+    width:150px;
+    height: 56px;
+    margin: 50px auto 20px auto;
+    text-indent: -9999px;
+}
 .login{
     background: url("../assets/images/bkg.png") fixed center;
         margin: 0 auto;
@@ -31,4 +38,20 @@ page-home {
     font-family: 'Grown Localy';
 			font-weight: normal;
 			font-style: normal;
+}
+.scroll-content{
+    width: 50%;
+    margin: 0 auto;
+    top:20%;
+}
+
+.toolbar-background-md{
+    background: none !important;
+    border:none !important;
+}
+
+@media screen and (max-width: 375px) {
+  .scroll-content{
+    min-width: 100%;
+}
 }
