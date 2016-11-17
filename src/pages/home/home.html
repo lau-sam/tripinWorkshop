@@ -1,10 +1,10 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Tripin Workshop</ion-title>
+    <ion-title>tripin Workshop</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="login">
+<ion-content padding class="login center width-50">
 <ion-list>
 
   <ion-item>
@@ -18,5 +18,8 @@
   </ion-item>
 
 </ion-list>
-  <button [navPush]="tabsPage">Connexion</button>
+  <button [navPush]="tabsPage" ion-button color="light" outline icon-left>
+  <ion-icon name="home"></ion-icon>
+  Connexion
+  </button>
 </ion-content>

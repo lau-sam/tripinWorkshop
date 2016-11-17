@@ -4,8 +4,28 @@ page-home {
 
 .toolbar-title{
     background: url("../assets/images/logo.png") no-repeat;
-    width:200px;
-    height: 75px;
-    text-indent: -9999px;
+    width:150px;
+    height: 56px;
     margin: 0 auto;
+    text-indent: -9999px;
+}
+
+.login{
+    background: url("../assets/images/bkg.png") no-repeat;
+}
+
+@font-face {
+	font-family: 'Grown Localy';
+	src: url('../assets/fonts/GrownLocaly.eot');
+	src: url('../assets/fonts/GrownLocaly.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/GrownLocaly.woff') format('woff'),
+		url('../assets/fonts/GrownLocaly.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.live{
+    font-family: 'Grown Localy';
+			font-weight: normal;
+			font-style: normal;
 }
