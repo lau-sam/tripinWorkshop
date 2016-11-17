@@ -26,6 +26,7 @@ export class FindPage {
 
     getTripsResults(event, myPlace, myDate, nbVoyageurs, rangePrice){
       console.log(rangePrice.lower);
+      console.log(rangePrice.upper);
       console.log(myPlace);
       console.log(nbVoyageurs);
       console.log(myDate);
