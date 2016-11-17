@@ -17,29 +17,30 @@ export class AboutPage {
     	this.m_http = http;
     }
 
-    createTrip(){
-    	this.data = JSON.stringify({
-		    "address-from": "Lille",
-		    "address-to": "Marseille",
-		    "date-creation": "2016-11-17",
-		    "date-from": null,
-		    "date-to": null,
-		    "description": "Ionic app",
-		    "name": "Trip create with Ionic App",
-		    "number-insiders": 2,
-		    "number-participers": 10,
-		    "price": 20,
-		    "user-organizer": {
-		      "id": 1
-		    },
-		    "users-participer": [
-		      {
-		      "id": 1
-		      }
-		    ]
-		});
+    createTrip( tripName, 
+				tripDescription,
+				tripNbVoyageurs,
+				tripRdvPoint,
+				tripDestination,
+				tripDepartureDate,
+				tripArrivalDate,
+				tripPrice
+				){
+    	var tripDateCreation;
 
-    	//var headers = new Headers({ 'Content-Type': 'application/json'});
+    	var dataToSend = '{\"address-from\":\"' + tripRdvPoint + '\",'
+    	+ '\"address-to\":\"' + tripDestination + '\",'
+    	+ '\"date-creation\":\"' + tripDateCreation + '\",'
+    	+ '\"date-from\":\"' + tripDepartureDate + '\",'
+    	+ '\"date-to\":\"' + tripArrivalDate + '\",'
+    	+ '\"description\":\"' + tripDescription + '\",'
+    	+ '\"name\":\"' + tripName + '\",'
+    	+ '\"number-insiders\":0,'
+    	+ '\"number-participers\":' + tripNbVoyageurs + ','
+    	+ '\"price\":' + tripPrice + ','
+    	+ '\"user-organizer\": {\"id\": 10},\"users-participer\": [{\"id\": 10}]}';
+
+    	this.data = dataToSend; 
     	var headers = new Headers();
   		headers.append('Content-Type', 'application/json');
     	this.m_http.post(this.postApiLink, this.data, {headers: headers})
