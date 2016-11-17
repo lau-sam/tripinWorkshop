@@ -12,10 +12,46 @@
 
 </ion-header>
 
-<ion-content padding>
-	Le trip a été organisé par {{userOrganizerName}} (Tel : {{userOrganizerPhone}})<br>
-	De {{addressFrom}} <ion-icon name="md-arrow-round-forward"></ion-icon> À {{addressTo}} <br>
-	Description : {{description}}<br>
-	Prix : {{price}} <br>
-	Nombre de participants déjà inscrits : {{nbParticipers}}<br>
+<ion-content padding class="page-detail">
+
+   <ion-card-content class="page-detail-bis">
+    <h1>{{addressTo}}</h1>
+    
+    <h2>Itinéraire</h2>
+    <div id="steps">
+       <img class="image-details" src="../assets/images/etape.png" alt="Smiley face">
+        <span class="etapeFrom">{{addressFrom}}</span><span class="etapeTo">{{addressTo}} </span>
+        <br>
+    </div>
+    
+    <h2>Description</h2>
+    <div id="description">
+        {{description}}
+    </div>
+    
+    <h2>Informations</h2>
+    <div id="description">
+      <ul class="lol">
+            <li><i class="fa fa-globe"></i>Organisateur :  <i class="right"> {{userOrganizerName}} </i></li>					
+            <li><i class="fa fa-phone"></i>Téléphone :  <i class="right">{{userOrganizerPhone}}</i></li>		
+            <li><i class="fa fa-phone"></i>Nombre Participants :  <i class="right">{{nbParticipers}}</i></li>			
+            <li><i class="fa fa-phone"></i>Prix :  <i class="right">{{price}}</i></li>
+      </ul>
+
+    </div>
+    
+    <h2>Localisation</h2>
+    <div id="map">
+        <img class="image-details" src="../assets/images/map.png" alt="Smiley face">
+        <p class="imgAdress">{{addressTo}}</p>
+    </div>
+    
+    <h2>Prix</h2>
+    <div id="descPrice">
+        <p class="titlePrice">{{price}}€</p>
+    </div>
+    
+
+	
+    </ion-card-content>
 </ion-content>

@@ -21,6 +21,7 @@ export class TripDetailsPage {
   nbParticipers;
   userOrganizerName;
   userOrganizerPhone;
+  nbInsiders;
 
   constructor(public navCtrl: NavController, private navParams: NavParams) {
   	this.tripObject = navParams.get('tripObjectSend');
@@ -32,6 +33,7 @@ export class TripDetailsPage {
     this.nbParticipers = this.tripObject['number-participers'];
     this.userOrganizerName = this.tripObject['user-organizer']['name'];
     this.userOrganizerPhone = this.tripObject['user-organizer']['phone-number'];
+    this.nbInsiders = this.tripObject['number-insiders'];
   }
 
   ionViewDidLoad() {

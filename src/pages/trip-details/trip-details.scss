@@ -1,3 +1,98 @@
 page-trip-details {
 
+    .page-detail h1{
+        font-family: 'Roboto';
+        font-size: 2.75em;
+       
+    }
+    .page-detail h1, .page-detail h2{
+        color: white;
+    }
+    
+    
+    .page-detail h2{
+        background: url("../assets/images/subtitle.png") no-repeat left bottom;
+        line-height: 2em;
+        
+    }
+    .page-detail-bis{
+        width: 80%;
+        margin: 6em auto;
+        position: relative;
+    }
+    #steps{
+        margin: 3em auto;
+        height: 3em;
+        position: relative;
+    }
+    #price{
+        position: absolute;
+        top: 2em;
+        right: 2em;
+    }
+    
+    #steps img{
+        width: 166px;
+        height: 29px;
+        margin-left: 5em;
+        
+    }
+    .etapeTo, .etapeFrom{
+        color: white;
+    }
+    .etapeTo{
+        position: absolute;
+        top: 3em;
+        left: 1em;
+    }
+    
+    .etapeFrom{
+        position: absolute;
+        top: 3em;
+        left: 12em;
+    }
+    
+    #description{
+        background: #fff;
+        padding: 20px;
+        margin: 20px auto;
+        overflow: hidden;
+    }
+    #map{
+        position: relative;
+    }
+    .imgAdress{
+    position: absolute;
+    bottom: 0em;
+    left: 0em;
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+    width: 100%;
+}
+    .lol{
+        list-style-type: none !important;
+    }
+ .right {
+    padding-left: 1em;
+    text-transform: uppercase;
+    color: #5EB049;
+    float: right;
+}
+    
+    .lol li{
+        padding: 10px 0;
+    }
+    #descPrice{
+        background-color: #5EB049;
+        color: white;
+        padding: 1em;
+        margin: 20px auto;
+        overflow: hidden;
+        text-align: center;
+    }
+    .titlePrice{
+        font-size: 2vw;
+        text-transform: uppercase;
+    }
 }
