@@ -15,9 +15,9 @@ export class AboutPage {
 	    this.m_json = data.data.children;
 	    console.log(this.m_json);
 	});*/
-	this.http.get('https://restcountries.eu/rest/v1/all').map(res => res.json()).subscribe(data => {
+	this.http.get('http://87.98.212.102:8080/WorkshopI5/ws/trip').map(res => res.json()).subscribe(data => {
 	    this.m_json = data;
-	    //console.log(this.m_json);
+	    console.log(this.m_json);
 	});
   }
 
