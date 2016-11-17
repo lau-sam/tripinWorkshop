@@ -40,7 +40,7 @@ export class AboutPage {
     	+ '\"price\":' + tripPrice + ','
     	+ '\"user-organizer\": {\"id\": 10},\"users-participer\": [{\"id\": 10}]}';
 
-    	this.data = dataToSend; // JSON.stringify(dataToSend);
+    	this.data = dataToSend; 
     	var headers = new Headers();
   		headers.append('Content-Type', 'application/json');
     	this.m_http.post(this.postApiLink, this.data, {headers: headers})
