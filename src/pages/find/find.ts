@@ -23,6 +23,13 @@ export class FindPage {
 	  	    this.m_json = data;
 	  	});
   	}
+
+    getTripsResults(event, myPlace, myDate, nbVoyageurs, rangePrice){
+      console.log(rangePrice.lower);
+      console.log(myPlace);
+      console.log(nbVoyageurs);
+      console.log(myDate);
+    }
   	
   	goTripDetails(event, tripId){
   		var i=1;

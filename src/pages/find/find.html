@@ -25,12 +25,12 @@
 
             <ion-item>
                 <ion-label floating>Où ?</ion-label>
-                <ion-input type="text" value=""></ion-input>
+                <ion-input type="text" [(ngModel)]="myPlace"></ion-input>
             </ion-item>
 
             <ion-item>
                 <ion-label>Date</ion-label>
-                <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+                <ion-datetime displayFormat="YYYY-MM-DD" [(ngModel)]="myDate"></ion-datetime>
             </ion-item>
            </ion-card-content> 
             <ion-card-header>
@@ -40,9 +40,9 @@
            <ion-card-content>
             <div class="list">
 
-                <<ion-item>
+                <ion-item>
 				  <ion-label>Nombre de participants</ion-label>
-				  <ion-select [(ngModel)]="_nbVoyageurs">
+				  <ion-select [(ngModel)]="nbVoyageurs">
 				    <ion-option value="1" selected="true">1</ion-option>
 				    <ion-option value="2">2</ion-option>
 				    <ion-option value="3">3</ion-option>
@@ -57,7 +57,6 @@
 
             </div>
             </ion-card-content>
-        
 
     </ion-card>
     
@@ -67,12 +66,18 @@
     </ion-card-header>
            <ion-card-content>
             <ion-item>
-                <ion-range min=300 max=2800 dualKnobs="true" pin="true" [(ngModel)]="structure" color="dark">
-
+                <ion-range min=300 max=2800 dualKnobs="true" pin="true" [(ngModel)]="rangePrice" color="dark">
+                <label range-left>0€</label>
+                <label range-right>2800€</label>
                 </ion-range>
+               
             </ion-item>
         </ion-card-content>
     </ion-card>
+
+    <ion-card-header>
+    	<button ion-button block (click)="getTripsResults($event, myPlace, myDate, nbVoyageurs, rangePrice)">Rechercher</button>
+    </ion-card-header>
 
     <ion-card>
 
