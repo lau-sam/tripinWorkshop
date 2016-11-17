@@ -5,15 +5,13 @@
 </ion-header>
 <ion-content padding> 
 	<ion-list>
-	   	<ion-item *ngFor="let country of m_json">
+	   	<ion-item *ngFor="let trip of m_json">
 			<ion-card>
 			  <ion-card-header>
-			    {{country.name}}
+			    {{trip.name}}
 			  </ion-card-header>
 
 			  <ion-card-content>
-			    Capital : {{country.capital}}<br>
-			    Population : {{country.population}}<br>
 			  </ion-card-content>
 
 			</ion-card>
