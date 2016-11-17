@@ -17,6 +17,10 @@ export class TripDetailsPage {
   price;
   addressFrom;
   addressTo;
+  description;
+  nbParticipers;
+  userOrganizerName;
+  userOrganizerPhone;
 
   constructor(public navCtrl: NavController, private navParams: NavParams) {
   	this.tripObject = navParams.get('tripObjectSend');
@@ -24,6 +28,10 @@ export class TripDetailsPage {
     this.price = this.tripObject['price'];
     this.addressFrom = this.tripObject['address-from'];
     this.addressTo = this.tripObject['address-to'];
+    this.description = this.tripObject['description'];
+    this.nbParticipers = this.tripObject['number-participers'];
+    this.userOrganizerName = this.tripObject['user-organizer']['name'];
+    this.userOrganizerPhone = this.tripObject['user-organizer']['phone-number'];
   }
 
   ionViewDidLoad() {
