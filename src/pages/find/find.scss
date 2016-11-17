@@ -46,7 +46,10 @@ letter-spacing: -1px;
     
     .item-md{
         border-top: 1px solid #dedede !important;
-}
+    }
+    .loginfbk{
+        padding-right: 0.2em;
+    }
     
     
     
@@ -65,4 +68,9 @@ letter-spacing: -1px;
     height: 56px;
     margin:0 auto;
     text-indent: -9999px;
+}
+.list select{
+    width:3em;
+    height: 3em;
+    display:block;
 }
