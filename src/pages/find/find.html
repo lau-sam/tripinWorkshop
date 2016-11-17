@@ -13,7 +13,7 @@
       <ion-card-header class="sectionTitle">
        <h1>Bon plans destinations</h1>
        <h2>Découvrez et partagez des destinations autour de vous</h2>
-       <button class="btn" ion-button color="light" outline icon-right><ion-icon name="logo-facebook"></ion-icon>S’inscrire / Se connecter</button>
+       <button class="btn" ion-button color="light" outline icon-right><ion-icon name="logo-facebook"></ion-icon><span class="loginfbk">S’inscrire / Se connecter</span></button>
        
        </ion-card-header>
        
@@ -34,29 +34,26 @@
             </ion-item>
            </ion-card-content> 
             <ion-card-header>
-                <h3>Nombre de Voyageurs</h3>
+                <h3>Nombre de Voyageurs </h3>
             </ion-card-header>
            
            <ion-card-content>
             <div class="list">
 
-                <label class="item item-input item-select">
-                    <!--<div class="input-label">
-                       
-                        <h3>Nombre de Voyageurs</h3>
-                    </div>-->
-                    
-                    
-                    <select>
-                        <option selected>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                    </select>
-                </label>
+                <<ion-item>
+				  <ion-label>Nombre de participants</ion-label>
+				  <ion-select [(ngModel)]="_nbVoyageurs">
+				    <ion-option value="1" selected="true">1</ion-option>
+				    <ion-option value="2">2</ion-option>
+				    <ion-option value="3">3</ion-option>
+				    <ion-option value="4">4</ion-option>
+				    <ion-option value="5">5</ion-option>
+				    <ion-option value="6">6</ion-option>
+				    <ion-option value="7">7</ion-option>
+				    <ion-option value="8">8</ion-option>
+				    <ion-option value="9">9</ion-option>
+				  </ion-select>
+				</ion-item>
 
             </div>
             </ion-card-content>
@@ -66,7 +63,7 @@
     
     <ion-card>
     <ion-card-header>
-                <h3>Prix :</h3>
+                <h3>Prix </h3>
     </ion-card-header>
            <ion-card-content>
             <ion-item>
@@ -80,7 +77,7 @@
     <ion-card>
 
         <ion-card-header>
-            <h3>Les trips en cours</h3>
+            <h3>Les trips en cours </h3>
         </ion-card-header>
 
         <ion-card-content>
