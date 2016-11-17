@@ -3,4 +3,43 @@ page-about {
         margin: 5em auto;
         width: 80%;
     }
+    
+    h1 {
+    background: url(../assets/images/subtitle.png) no-repeat left bottom;
+    line-height: 2em;
+    }
+    h1 {
+        color: white;
+    font-size: 2vw;
+        text-transform: capitalize;
+        font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+letter-spacing: -1px;
+        margin-top: 1em !important;
+        
+    }
+    #about h1{
+        width: 80%;
+        margin: 0 auto;
+            font-size: 3vw;
+    }
+    
+    @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+#about h1{
+            font-size: 6vw;
+    }
+}
+    /* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+      #about h1{
+            font-size: 6vw;
+    }
+}
+
 }

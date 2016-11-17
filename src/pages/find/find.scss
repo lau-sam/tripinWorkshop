@@ -11,7 +11,7 @@ page-find {
     .card-md h1 {
         font-family: 'Roboto';
         text-transform: uppercase;
-        font-size: 5vw;
+        font-size: 4vw;
         color: white;
         width: 100%;
         text-align: center;
@@ -60,6 +60,24 @@ letter-spacing: -1px;
         }
         
 }
+    @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+.page-find .card-md h2{
+            font-size: 6vw;
+    }
+}
+    /* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+.page-find .card-md h2{
+            font-size: 6vw;
+    }
+}
 }
 
 .toolbar-title{
@@ -86,3 +104,5 @@ h3 {
     background: url(../assets/images/subtitle.png) no-repeat left bottom;
     line-height: 2em;
 }
+
+
