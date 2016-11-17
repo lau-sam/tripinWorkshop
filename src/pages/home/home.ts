@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-
 import { NavController } from 'ionic-angular';
-
 import { TabsPage } from '../tabs/tabs';
 
 @Component({
@@ -10,9 +8,9 @@ import { TabsPage } from '../tabs/tabs';
 })
 export class HomePage {
 	tabsPage = TabsPage;
+	constructor(public navCtrl: NavController) {}
 
-  constructor(public navCtrl: NavController) {
-
-  }
-
+  	ionViewDidLoad() {
+    	console.log('Hello HomePage Page');
+  	}
 }
