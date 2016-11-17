@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
-//import { NavController } from 'ionic-angular';
+import { TripDetailsPage } from '../trip-details/trip-details';
+import { NavController } from 'ionic-angular';
+
 
 @Component({
   selector: 'page-about',
@@ -9,16 +11,24 @@ import 'rxjs/add/operator/map';
 })
 export class AboutPage {
   m_json: any;
- 	
-  constructor(public http: Http) {
-	/**this.http.get('https://www.reddit.com/r/gifs/new/.json?limit=10').map(res => res.json()).subscribe(data => {
-	    this.m_json = data.data.children;
-	    console.log(this.m_json);
-	});*/
-	this.http.get('http://87.98.212.102:8080/WorkshopI5/ws/trip').map(res => res.json()).subscribe(data => {
-	    this.m_json = data;
-	    console.log(this.m_json);
-	});
-  }
 
+  constructor(public http: Http, private navController: NavController) {
+  	this.http.get('http://87.98.212.102:8080/WorkshopI5/ws/trip').map(res => res.json()).subscribe(data => {
+  	    this.m_json = data;
+  	});
+  }
+  	
+  	goTripDetails(event, tripId){
+  		var i=1;
+  		while (i!=tripId && i<=Object.keys(this.m_json).length){
+  			i++;
+  		}
+
+  		if(i<=Object.keys(this.m_json).length){
+  			this.navController.push( TripDetailsPage, {
+  				tripObjectSend : this.m_json[i-1]
+        });
+        console.log('Trip ID Send : '+ tripId + '\n' + 'Real Trip ID' + this.m_json[i-1].id);
+      }
+  	}
 }
