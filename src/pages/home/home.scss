@@ -21,16 +21,6 @@ page-home {
     background-size: 100% 100%;
 }
 
-@font-face {
-	font-family: 'Grown Localy';
-	src: url('../assets/fonts/GrownLocaly.eot');
-	src: url('../assets/fonts/GrownLocaly.eot?#iefix') format('embedded-opentype'),
-		url('../assets/fonts/GrownLocaly.woff') format('woff'),
-		url('../assets/fonts/GrownLocaly.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
 .live{
     font-family: 'Grown Localy';
 			font-weight: normal;
@@ -55,3 +45,43 @@ page-home {
 }
 }
 
+.scroll-content{
+     background: url("../assets/images/bkg.png") fixed center;
+        margin: 0 auto;
+    width: 100%;
+    background-size: 100% 100%;
+}
+.card-md {
+    box-shadow: none;
+    cursor: pointer;
+}
+
+@font-face {
+	font-family: 'Grown Localy';
+	src: url('../assets/fonts/GrownLocaly.eot');
+	src: url('../assets/fonts/GrownLocaly.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/GrownLocaly.woff') format('woff'),
+		url('../assets/fonts/GrownLocaly.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+    
+@font-face {
+font-family: 'Roboto';
+src: url('../assets/fonts/Roboto-Regular.eot');
+src: url('../assets/fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/Roboto-Regular.woff') format('woff'),
+    url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../assets/fonts/Roboto-Italic.eot');
+	src: url('../assets/fonts/Roboto-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/Roboto-Italic.woff') format('woff'),
+		url('../assets/fonts/Roboto-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}

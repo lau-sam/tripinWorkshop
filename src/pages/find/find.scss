@@ -1,3 +1,61 @@
 page-find {
-	
+	.sectionTitle, .card-md{
+    background: none !important;
+    
+    }
+    .sectionTitle{
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    .card-md h1 {
+        font-family: 'Roboto';
+        text-transform: uppercase;
+        font-size: 5vw;
+        color: white;
+        width: 100%;
+        text-align: center;
+    }
+    .card-md h2 {
+        color: white;
+    font-family: 'Roboto';
+    font-size: 2vw;
+    margin-top: 1em;
+    text-align: center;
+    }
+    .card-md h3 {
+        color: white;
+    font-size: 2vw;
+        text-transform: capitalize;
+        font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+letter-spacing: -1px;
+        margin-top: 1em !important;
+    }
+    .btn{
+        text-align: center;
+        margin: 1em auto;
+    display: block;
+    }
+    
+    .item-md{
+        border-top: 1px solid #dedede !important;
+}
+    
+    
+    
+    
+    @media screen and (max-width: 475px) {
+        .card-md h3 {
+            font-size: 5vw;
+        }
+        
+}
+}
+
+.toolbar-title{
+    background: url("../assets/images/logo.png") no-repeat;
+    width:150px;
+    height: 56px;
+    margin:0 auto;
+    text-indent: -9999px;
 }

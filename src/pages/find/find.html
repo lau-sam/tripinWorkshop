@@ -10,8 +10,19 @@
 <ion-content padding>
     <ion-card>
 
+      <ion-card-header class="sectionTitle">
+       <h1>Bon plans destinations</h1>
+       <h2>Découvrez et partagez des destinations autour de vous</h2>
+       <button class="btn" ion-button color="light" outline icon-right><ion-icon name="logo-facebook"></ion-icon>S’inscrire / Se connecter</button>
+       
+       </ion-card-header>
+       
+       
+       
+       
+       
         <ion-card-header>
-            Trouver un trip
+            <h3>Trouver un trip</h3>
         </ion-card-header>
 
         <ion-card-content>
@@ -25,12 +36,21 @@
                 <ion-label>Date</ion-label>
                 <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
             </ion-item>
+           </ion-card-content> 
+            <ion-card-header>
+                <h3>Nombre de Voyageurs</h3>
+            </ion-card-header>
+           
+           <ion-card-content>
             <div class="list">
 
                 <label class="item item-input item-select">
-                    <div class="input-label">
-                        Nombre de Voyageurs
-                    </div>
+                    <!--<div class="input-label">
+                       
+                        <h3>Nombre de Voyageurs</h3>
+                    </div>-->
+                    
+                    
                     <select>
                         <option selected>1</option>
                         <option>2</option>
@@ -43,12 +63,14 @@
                 </label>
 
             </div>
+            
             <ion-item>
                 <ion-range min=300 max=2800 dualKnobs="true" pin="true" [(ngModel)]="structure" color="dark">
 
                 </ion-range>
             </ion-item>
-        </ion-card-content>
+            </ion-card-content>
+        
 
     </ion-card>
 
@@ -56,7 +78,7 @@
     <ion-card>
 
         <ion-card-header>
-            Les trips en cours
+            <h3>Les trips en cours</h3>
         </ion-card-header>
 
         <ion-card-content>
