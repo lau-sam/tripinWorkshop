@@ -40,23 +40,13 @@
            <ion-card-content>
             <div class="list">
 
-                <label class="item item-input item-select">
-                    <!--<div class="input-label">
-                       
-                        <h3>Nombre de Voyageurs</h3>
-                    </div>-->
-                    
-                    
-                    <select>
-                        <option selected>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                    </select>
-                </label>
+                <<ion-item>
+				  <ion-label>Nombre de participants</ion-label>
+				  <ion-select [(ngModel)]="_nbVoyageurs">
+				    <ion-option value="1" selected="true">1</ion-option>
+				    <ion-option value="2">2</ion-option>
+				  </ion-select>
+				</ion-item>
 
             </div>
             </ion-card-content>
