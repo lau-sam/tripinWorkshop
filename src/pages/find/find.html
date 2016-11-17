@@ -17,12 +17,8 @@
        
        </ion-card-header>
        
-       
-       
-       
-       
         <ion-card-header>
-            <h3>Trouver un trip</h3>
+            <h3><ion-icon name="search"></ion-icon>Trouver un trip</h3>
         </ion-card-header>
 
         <ion-card-content>
@@ -63,17 +59,23 @@
                 </label>
 
             </div>
-            
+            </ion-card-content>
+        
+
+    </ion-card>
+    
+    <ion-card>
+    <ion-card-header>
+                <h3>Prix :</h3>
+    </ion-card-header>
+           <ion-card-content>
             <ion-item>
                 <ion-range min=300 max=2800 dualKnobs="true" pin="true" [(ngModel)]="structure" color="dark">
 
                 </ion-range>
             </ion-item>
-            </ion-card-content>
-        
-
+        </ion-card-content>
     </ion-card>
-
 
     <ion-card>
 

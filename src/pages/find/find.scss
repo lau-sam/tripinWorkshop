@@ -30,11 +30,18 @@ page-find {
         font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
 letter-spacing: -1px;
         margin-top: 1em !important;
+        
     }
+    
+    
+    .card-md h3 .icon-md{
+        padding-right: 0.3em;
+    }
+    
     .btn{
         text-align: center;
-        margin: 1em auto;
-    display: block;
+        margin: 2em auto 0 auto;
+        display: block;
     }
     
     .item-md{
