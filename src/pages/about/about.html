@@ -1,10 +1,10 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Create New Trip</ion-title>
+    <ion-title>Cree ton voyage</ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content padding>
-	
+	<h1>Ton rêve à portée de main</h1>
 	<ion-list>
 
 	  <ion-item>
@@ -13,14 +13,14 @@
 	  </ion-item>
 
 	  <ion-item>
-	    <ion-label floating>Envois une description de malade !</ion-label>
+	    <ion-label floating>Envoies une description de malade !</ion-label>
 	    <ion-input type="text"></ion-input>
 	  </ion-item>
 
 				<ion-item>
 				  <ion-label>Nombre de "futurs" potes</ion-label>
 				  <ion-select [(ngModel)]="nbTravellers">
-				    <ion-option value="1" selected="true">1</ion-option>
+				    <ion-option value="1" ng-selected="selected">1</ion-option>
 				    <ion-option value="2">2</ion-option>
 				    <ion-option value="3">3</ion-option>
 				    <ion-option value="4">4</ion-option>
@@ -47,17 +47,17 @@
        </ion-item>
 
        <ion-item>
-       	<ion-label>Date estimée pour l'arrivé</ion-label>
+       	<ion-label>Date estimée pour le retour?</ion-label>
        	<ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="arrivalDate"></ion-datetime>
        </ion-item>
 
 	  <ion-item>
-	    <ion-label floating>Le prix estimé pour le trip</ion-label>
+	    <ion-label floating>Le tarif estimé du voyage</ion-label>
 	    <ion-input type="text"></ion-input>
 	  </ion-item>
 
 		<button ion-button icon-only (click)="createTrip()" full>
-	  		<ion-icon name="md-add"> CREATE TRIP</ion-icon>
+	  		<ion-icon name="md-add"> PUBLIER LE VOYAGE</ion-icon>
 		</button>
 					
 	</ion-list>	
