@@ -50,27 +50,4 @@ export class AboutPage {
             console.log("POST ERROR !");
         });
     }
-
-    /**
-	{
-	    "address-from": "Lille",
-	    "address-to": "Marseille",
-	    "date-creation": "2016-11-17",
-	    "date-from": null,
-	    "date-to": null,
-	    "description": "Ionic app",
-	    "name": "Trip create with Ionic App",
-	    "number-insiders": 2,
-	    "number-participers": 10,
-	    "price": 20,
-	    "user-organizer": {
-	      "id": 1
-	    },
-	    "users-participer": [
-	      {
-	      "id": 1
-	      }
-	    ]
-	}
-    */
 }
