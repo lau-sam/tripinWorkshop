@@ -1,7 +1,8 @@
 [//]: # (project description)
 # tripinWorkshop
 
-Workshop Week - 5YD Computer Science 
+Workshop Week - Thinking out of the box
+Computer Science - 5 Year Degree 
 <img src="https://github.com/lau-sam/tripinWorkshop/blob/master/src/assets/logo/logo.png" height="50">
 
 Front-end : **Ionic 2** 
